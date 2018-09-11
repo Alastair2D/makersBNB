@@ -7,10 +7,10 @@ describe('View all listings features', function() {
   // })
 
   describe('/', function() {
-    it('responds with string: Hello World!, function () {
+    it('responds with Hello World!', function () {
       visit('/')
       // expect(page).to have_content 'Hello World!'
-      page.should have_content 'Hello World!'
+      page.should have_content('Hello World!')
     })
   })
 

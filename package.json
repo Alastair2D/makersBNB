@@ -2,7 +2,7 @@
   "name": "makersbnb",
   "version": "1.0.0",
   "description": "makersBNB",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/Alastair2D/makersBNB#readme",
   "dependencies": {
-    "body-parser": "*",
-    "ejs": "^2.6.1",
     "express": "^4.16.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "frisby": "^2.1.0",
+    "jest": "^23.6.0"
+  },
   "keywords": [
     "makers"
   ]

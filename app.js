@@ -1,9 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-
 const app = express();
-
+const frisby = require('frisby');
 
 // Body parser middleware - will handle parsing json content - not sure exactly what this does!!
 app.use(bodyParser.json());
@@ -11,7 +10,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // set static path
 // app.use(express.static(path.join(__dirname, 'public'))) -----no idea if this is necessary!
-
 
 // middleware to set the view engine - setting it to use ejs
 app.set('view engine', 'ejs');
@@ -49,7 +47,6 @@ var properties = [
     price: '£150 per night'
   },
 ]
-
 
 
 app.get('/', function (req, res) {    // One-line equivalent syntax: (req, res) => res.send('Hello World!'))
