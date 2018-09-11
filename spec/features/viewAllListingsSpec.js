@@ -6,7 +6,9 @@ Browser.localhost('localhost', 3000)
 
 describe('View all listings features', function() {
 
-  const browser = new Browser()
+  // beforeEach(function () {
+    const browser = new Browser()
+  // })
 
   describe('/', function() {
     it('responds with Hello World!', function () {
