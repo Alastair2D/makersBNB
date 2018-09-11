@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const frisby = require('frisby');
 
 // Body parser middleware - will handle parsing json content - not sure exactly what this does!!
 app.use(bodyParser.json());
